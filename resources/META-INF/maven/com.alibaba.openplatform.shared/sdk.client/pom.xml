@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <build> 
+    <plugins> 
+      <plugin> 
+        <groupId>org.apache.maven.plugins</groupId>  
+        <artifactId>maven-compiler-plugin</artifactId>  
+        <configuration> 
+          <source>8</source>  
+          <target>8</target> 
+        </configuration> 
+      </plugin> 
+    </plugins> 
+  </build>  
+  <parent> 
+    <groupId>com.alibaba.openplatform.shared</groupId>  
+    <artifactId>sdk.parent</artifactId>  
+    <version>1.3.0-SNAPSHOT</version>
+  </parent>  
+  <groupId>com.alibaba.openplatform.shared</groupId>  
+  <artifactId>sdk.client</artifactId>  
+  <packaging>jar</packaging>
+  <name>sdk.client</name>
+  <url>http://maven.apache.org</url>
+  <properties> 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+  </properties>  
+  <dependencies> 
+    <dependency> 
+      <groupId>org.springframework.boot</groupId>  
+      <artifactId>spring-boot-starter-freemarker</artifactId>  
+      <scope>test</scope> 
+    </dependency>  
+    <dependency> 
+      <groupId>mysql</groupId>  
+      <artifactId>mysql-connector-java</artifactId>  
+      <scope>test</scope> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.apache.httpcomponents</groupId>  
+      <artifactId>httpclient</artifactId> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.apache.httpcomponents</groupId>  
+      <artifactId>httpmime</artifactId> 
+    </dependency>  
+    <dependency> 
+      <groupId>joda-time</groupId>  
+      <artifactId>joda-time</artifactId> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.apache.commons</groupId>  
+      <artifactId>commons-lang3</artifactId> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.eclipse.jetty</groupId>  
+      <artifactId>jetty-reactive-httpclient</artifactId> 
+    </dependency>  
+    <dependency> 
+      <groupId>com.alibaba</groupId>  
+      <artifactId>fastjson</artifactId> 
+    </dependency> 
+  </dependencies>  
+<!--  <contributors><contributor><properties><provider>zhaozhao.zzz@alibaba-inc.com</provider><codeName>null</codeName><codeUrl>git@gitlab.alibaba-inc.com:gov-cloud/openplatform_sdk.git commit:766e074</codeUrl><description>contributors added by SCM Plugin, please don't modify it!</description></properties></contributor></contributors>-->
+</project>
+
